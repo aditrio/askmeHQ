@@ -1,5 +1,9 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <v-row class="mt-4">
+      <v-col align="center">
+        <h2>TENTANG</h2>
+      </v-col>
+    </v-row>
   </div>
 </template>
