@@ -16,7 +16,7 @@ export default new Vuex.Store({
   },
   actions: {
     getHadits({commit}, keyword)  {
-         axios.get('http://api.carihadis.com/?q='+ keyword).then(
+         axios.get('https://api.carihadis.com/?q='+ keyword).then(
            (resp) => { 
              var data = [];
              resp.data.map(e => {

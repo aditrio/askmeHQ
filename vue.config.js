@@ -3,7 +3,7 @@ module.exports = {
     'vuetify'
   ],
   devServer: {
-    proxy: 'http://api.carihadis.com' 
+    proxy: 'https://api.carihadis.com' 
   },
-  publicPath: process.env.NODE_ENV === 'production'    ? '/askmeHQ/'    : '/'
+  
 }
