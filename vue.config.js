@@ -5,5 +5,5 @@ module.exports = {
   devServer: {
     proxy: 'http://api.carihadis.com' 
   },
-  publicPath: process.env.NODE_ENV === 'production'    ? '/app/'    : '/'
+  publicPath: process.env.NODE_ENV === 'production'    ? '/askmeHQ/'    : '/'
 }
