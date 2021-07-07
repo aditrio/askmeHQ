@@ -15,11 +15,11 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    getHadits({commit},)  {
-         axios.get('http://localhost:3000/search').then(
+    getHadits({commit}, keyword)  {
+         axios.get('http://api.carihadis.com/?q='+ keyword).then(
            (resp) => { 
              var data = [];
-             resp.data.data.map(e => {
+             resp.data.map(e => {
                if(["Shahih_Bukhari", "Shahih_Muslim", "Shahih_Ibnu_Hibban", "Shahih_Ibnu_Khuzaimah"].includes(e.kitab)){
                  
                  console.log(e);
